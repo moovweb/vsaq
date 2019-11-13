@@ -15,18 +15,19 @@
 <!DOCTYPE html>
 <html class="google-js" lang="en">
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; script-src 'self' 'unsafe-eval' https://www.google.com/js/maia.js; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://www.google.com/css/maia.css; font-src https://fonts.gstatic.com;">
+<meta http-equiv="Content-Security-Policy"
+  content="default-src 'self'; object-src 'none'; script-src 'self' 'unsafe-eval' https://www.google.com/js/maia.js; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
 <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
 <title>
-  Vendor Security Assessment Questionnaire
+  MOOVWEB | Vendor Security Assessment Questionnaire
 </title>
-<link href="https://www.google.com/css/maia.css" rel="stylesheet" />
+<link href="static/maia.css" rel="stylesheet" />
 <link href="static/vsaq.css" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700&amp;lang=en" rel="stylesheet" />
 <div class="maia-header" id="maia-header" role="banner">
   <div class="maia-aux">
     <h1>
-      <a href="/">VSAQ</a>
+      <a href="/">MOOVWEB</a>
     </h1>
     <h2>Vendor Security Assessment Questionnaires</h2>
   </div>
@@ -59,9 +60,9 @@
           <form id="_vsaq_export_element">
             <div id="_vsaq_body" class="vsaq-body">
               <p>
-              Please reload this page with a qpath parameter.<br />
-              E.g.: qpath=questionnaires/ven_template.json<br />
-              Link: <a href="?qpath=questionnaires/test_template.json" >Example</a><br />
+                Please reload this page with a qpath parameter.<br />
+                E.g.: qpath=questionnaires/ven_template.json<br />
+                Link: <a href="?qpath=questionnaires/test_template.json">Example</a><br />
               </p>
             </div>
           </form>
@@ -76,9 +77,7 @@
         </div>
       </div>
     </div>
-    <div id="maia-signature"></div>
     <div id="vsaq-dialogs"></div>
-    <script src="https://www.google.com/js/maia.js"></script>
     <script src="vsaq_binary.js"></script>
   </div>
 </div>

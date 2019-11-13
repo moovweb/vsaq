@@ -169,6 +169,7 @@ vsaq_build() {
   mkdir -p "$BUILD_DIR_STATIC"
   csscompile_vsaq="java -jar third_party/closure-stylesheets/target/closure-stylesheets-1.5.0-SNAPSHOT-jar-with-dependencies.jar --allowed-non-standard-function color-stop"
   echo "Compiling CSS files..."
+  find "vsaq" -path "*static/maia.css" -exec cp -f "{}" "$BUILD_DIR_STATIC" \;
   $csscompile_vsaq "vsaq/static/vsaq_base.css" "vsaq/static/vsaq.css" > "$BUILD_DIR_STATIC/vsaq.css"
   echo "Copying remaining static files..."
   find "vsaq" -regex '.*.\(gif\|png\|ico\)$' -exec cp -f "{}" "$BUILD_DIR_STATIC" \;

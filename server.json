@@ -1,0 +1,21 @@
+{
+  "apps": {
+    "http": {
+      "servers": {
+        "myserver": {
+          "listen": [":80"],
+          "routes": [
+            {
+              "handle": [
+                {
+                  "handler": "file_server",
+                  "root": "/var/www/html"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
